@@ -1,0 +1,252 @@
+{
+  "users": [
+    {
+      "userId": 1,
+      "userName": "jane",
+      "password": "demo123",
+      "firstName": "Jane",
+      "middleName": null,
+      "lastName": "Dela Cruz",
+      "access": "FULL",
+      "role": "Manager"
+    },
+    {
+      "userId": 2,
+      "userName": "mark",
+      "password": "demo123",
+      "firstName": "Mark",
+      "middleName": null,
+      "lastName": "Santos",
+      "access": "SALES",
+      "role": "Salesperson"
+    },
+    {
+      "userId": 3,
+      "userName": "leah",
+      "password": "demo123",
+      "firstName": "Leah",
+      "middleName": null,
+      "lastName": "Garcia",
+      "access": "SALES",
+      "role": "Salesperson"
+    },
+    {
+      "userId": 4,
+      "userName": "admin",
+      "password": "123456",
+      "firstName": "Admin",
+      "middleName": null,
+      "lastName": "Administrator",
+      "access": "FULL",
+      "role": "Administrator"
+    }
+  ],
+  "dashboard": {
+    "sales": {
+      "monthToDate": 1284600,
+      "monthChange": 12.4,
+      "confirmedOrders": 18,
+      "pendingQuotations": 7,
+      "newInquiries": 12
+    },
+    "production": {
+      "activeOrders": 24,
+      "overdueOrders": 2,
+      "dueSoonOrders": 5,
+      "stages": [
+        { "name": "Design", "count": 3 },
+        { "name": "Materials", "count": 2 },
+        { "name": "Printing", "count": 4 },
+        { "name": "Heat press", "count": 3 },
+        { "name": "Cutting", "count": 3 },
+        { "name": "Sewing", "count": 5 },
+        { "name": "QC", "count": 2 },
+        { "name": "Packing", "count": 1 },
+        { "name": "Ready", "count": 1 }
+      ]
+    },
+    "finance": {
+      "collectedThisMonth": 824500,
+      "outstandingReceivables": 516200,
+      "expensesThisMonth": 438900,
+      "projectedGrossProfit": 103100
+    },
+    "inventory": {
+      "lowStockCount": 3,
+      "items": [
+        { "name": "Sublimation paper", "onHand": 14, "unit": "rolls", "minimum": 20 },
+        { "name": "Polyester fabric", "onHand": 38, "unit": "kg", "minimum": 50 },
+        { "name": "Cyan sublimation ink", "onHand": 2, "unit": "cartridges", "minimum": 4 }
+      ]
+    },
+    "attention": [
+      { "level": "urgent", "title": "Artwork approval holding production", "detail": "AFHIM-JO-2026-0007 · Northstar Academy", "age": "1 day" },
+      { "level": "overdue", "title": "Customer balance is overdue", "detail": "AFHIM-JO-2026-0003 · PHP 42,500 outstanding", "age": "3 days" },
+      { "level": "watch", "title": "Material stock below minimum", "detail": "Sublimation paper · 14 rolls on hand", "age": "Today" }
+    ],
+    "featuredJob": {
+      "id": "AFHIM-JO-2026-0001",
+      "client": "Northstar Academy",
+      "project": "Foundation Day varsity jackets",
+      "stage": "Sewing",
+      "dueDate": "08 Oct 2026",
+      "priority": "Priority",
+      "orderValue": 190000,
+      "collected": 95000,
+      "balance": 95000,
+      "orderedQuantity": 500,
+      "completedQuantity": 410,
+      "qcPassed": 397,
+      "rework": 13,
+      "progress": 79,
+      "actualCost": 86900,
+      "projectedProfit": 103100,
+      "trail": ["Order", "Design", "Materials", "Print", "Press", "Cut", "Sew", "QC", "Pack", "Delivery"]
+    },
+    "productionQueue": [
+      { "id": "AFHIM-JO-2026-0004", "client": "Lumen PH", "product": "Performance shirts", "quantity": 240, "stage": "Printing", "dueDate": "06 Oct", "priority": "Rush" },
+      { "id": "AFHIM-JO-2026-0001", "client": "Northstar Academy", "product": "Varsity jackets", "quantity": 500, "stage": "Sewing", "dueDate": "08 Oct", "priority": "Priority" },
+      { "id": "AFHIM-JO-2026-0006", "client": "Metrobank Makati", "product": "Office uniforms", "quantity": 120, "stage": "QC", "dueDate": "10 Oct", "priority": "Normal" }
+    ]
+  },
+  "inquiries": [
+    {
+      "inquiryID": "INQ-2026-0031",
+      "inquiryDate": "2026-08-27T00:00:00.000Z",
+      "companyName": "Northstar Academy",
+      "contactName": "Angela Reyes",
+      "contactNumber": "0917 555 0131",
+      "email": "angela@northstar.example",
+      "socialAccount": "Northstar Academy",
+      "address": "Quezon City, Metro Manila",
+      "source": "Referral",
+      "salesPerson": "Jane Dela Cruz",
+      "productID": "PRD-0031",
+      "status": 1,
+      "targetDate": "2026-09-04",
+      "product": {
+        "productId": "PRD-0031",
+        "targetPrice": 1225,
+        "targetDate": "2026-09-04",
+        "remarks": "Varsity jackets for Foundation Day.",
+        "productType": "Varsity jackets",
+        "quantity": 350
+      }
+    },
+    {
+      "inquiryID": "INQ-2026-0030",
+      "inquiryDate": "2026-08-26T00:00:00.000Z",
+      "companyName": "Brightside Co.",
+      "contactName": "Paolo Lim",
+      "contactNumber": "0918 555 0130",
+      "email": "paolo@brightside.example",
+      "socialAccount": "brightsideco",
+      "address": "Makati City, Metro Manila",
+      "source": "Facebook / Messenger",
+      "salesPerson": "Mark Santos",
+      "productID": "PRD-0030",
+      "status": 2,
+      "targetDate": "2026-09-12",
+      "product": {
+        "productId": "PRD-0030",
+        "targetPrice": 285,
+        "targetDate": "2026-09-12",
+        "remarks": "Company event shirts; artwork to follow.",
+        "productType": "Performance shirts",
+        "quantity": 300
+      }
+    },
+    {
+      "inquiryID": "INQ-2026-0029",
+      "inquiryDate": "2026-08-25T00:00:00.000Z",
+      "companyName": "Metrobank Makati",
+      "contactName": "Rina Bautista",
+      "contactNumber": "0919 555 0129",
+      "email": "rina@metrobank.example",
+      "socialAccount": "",
+      "address": "Makati City, Metro Manila",
+      "source": "Repeat client",
+      "salesPerson": "Jane Dela Cruz",
+      "productID": "PRD-0029",
+      "status": 3,
+      "targetDate": "2026-09-20",
+      "product": {
+        "productId": "PRD-0029",
+        "targetPrice": 960,
+        "targetDate": "2026-09-20",
+        "remarks": "Branch uniforms, include embroidered logo.",
+        "productType": "Office uniforms",
+        "quantity": 120
+      }
+    },
+    {
+      "inquiryID": "INQ-2026-0028",
+      "inquiryDate": "2026-08-23T00:00:00.000Z",
+      "companyName": "Lumen PH",
+      "contactName": "Mika Flores",
+      "contactNumber": "0920 555 0128",
+      "email": "mika@lumen.example",
+      "socialAccount": "lumen.ph",
+      "address": "Pasig City, Metro Manila",
+      "source": "Organization",
+      "salesPerson": "Leah Garcia",
+      "productID": "PRD-0028",
+      "status": 4,
+      "targetDate": "2026-09-18",
+      "product": {
+        "productId": "PRD-0028",
+        "targetPrice": 1542,
+        "targetDate": "2026-09-18",
+        "remarks": "Marketing kits with printed tote bags and shirts.",
+        "productType": "Marketing kits",
+        "quantity": 100
+      }
+    },
+    {
+      "inquiryID": "INQ-2026-0027",
+      "inquiryDate": "2026-08-21T00:00:00.000Z",
+      "companyName": "City Schools Division",
+      "contactName": "Ramon Cruz",
+      "contactNumber": "0921 555 0127",
+      "email": "ramon@schools.example",
+      "socialAccount": "",
+      "address": "Manila, Metro Manila",
+      "source": "Government",
+      "salesPerson": "Mark Santos",
+      "productID": "PRD-0027",
+      "status": 5,
+      "targetDate": "2026-10-01",
+      "product": {
+        "productId": "PRD-0027",
+        "targetPrice": 780,
+        "targetDate": "2026-10-01",
+        "remarks": "Student uniforms approved for production.",
+        "productType": "Student uniforms",
+        "quantity": 400
+      }
+    },
+    {
+      "inquiryID": "INQ-2026-0026",
+      "inquiryDate": "2026-08-19T00:00:00.000Z",
+      "companyName": "Harbor Point Retail",
+      "contactName": "Nico Tan",
+      "contactNumber": "0922 555 0126",
+      "email": "nico@harborpoint.example",
+      "socialAccount": "harborpoint",
+      "address": "Manila, Metro Manila",
+      "source": "Walk-in",
+      "salesPerson": "Leah Garcia",
+      "productID": "PRD-0026",
+      "status": 6,
+      "targetDate": "2026-09-10",
+      "product": {
+        "productId": "PRD-0026",
+        "targetPrice": 0,
+        "targetDate": "2026-09-10",
+        "remarks": "Customer postponed the project.",
+        "productType": "Promotional items",
+        "quantity": 80
+      }
+    }
+  ]
+}
